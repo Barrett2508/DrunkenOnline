@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.logo {
+  height: 75px;
+  width: auto;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 10px;
+  font-weight: 900;
+  color: #fff;
+  background-color: #000000;
+  border-bottom: 3px solid red;
+  align-items: center;
+}
+
+nav h1 {
+  padding: 10px;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+nav > ul > li {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./drunkenbg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+}
+
+.welcome {
+  text-align: center;
+  background: linear-gradient(to right, rgba(139, 0, 0, 0.5),rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75));
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0;
+  color: #fff;
+  background: linear-gradient(to left, #4f0101, #000000, #4f0101);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.info h3{
+  margin: 50px auto;
+}
+
+.info ul {
+  margin: 0 auto;
+}
+
+.joining {
+  background-color: #950101;
+  height: 100dvh;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  text-align: center;
+}
+
+
+#joining-section {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #950101;
+  color: #fff;
+  padding: 20px 0;
+}
+
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 20px;
+  text-align: center;
+  margin-top: 20%;
+}
+
+
+.joining img {
+  width: auto;
+  height: 150px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+.joining p {
+  margin-top: -50px;
+  font-weight: 900;
+}
+
+.about {
+  background-color: #950101;
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  
+}
+
+.about p{
+  padding: 10px 10px;
+  margin: 10px auto;
+  font-size: 1.5rem;
+  width: 85%;
+}
+
+.about h2 {
+  padding-top: 20px;  
+  font-size: 2rem;
+}
+
+.donation-intro {
+  background-color: #950101;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  padding: 5% 0;
+
+}
+
+.donation-perks {
+  background-color: #000000;
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  padding: 5% 0;
+  line-height: 3rem;
+  
+}
+
+.donation-perks ul {
+  padding: 20px 0;
+  margin-bottom: 50px;
+}
+
+.donation-perks p {
+  font-weight: 900;
+}
+
+.donation-perks h2 {
+  font-weight: 900;  
+
+}
+
+.donation-methods {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+  padding: 10% 0;
+  background-color: #950101;
+  color: #fff;
+  font-weight: 900;
+}
+
+.donation-methods img {
+  height: 200px;
+  width: auto;
+  background-color: #fff;
+  border-radius:50%
+}
+
+.donation-title {
+  font-weight: 900;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  padding-top: 25px;  
+  background-color: #950101;
+}
+
+
+
+footer {
+  width: 100vw;
+  background-color: #3D0000;
+  height: 30vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #950101;
+}
+
+@media (max-width: 821px) {
+  * {
+    font-size: 16px;
+  } 
+
+  img{ 
+    height: 100px;
+    width: auto;
+  }
+}
