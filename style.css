@@ -64,12 +64,12 @@ nav > ul > li {
   font-size: 2rem;
 }
 
-.card {
+.maincard {
   margin: 0 20px;
   padding: 15px 0;
 }
 
-.card > img {
+.maincard > img {
   width: auto;
   height: 300px;
   border-radius: 50%;
@@ -234,12 +234,19 @@ h4 {
 
 /* donate.html */
 
+.stripe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 50px;
+}
+
 .donation-intro {
   background-color: #950101;
   font-size: 2rem;
   color: #fff;
   text-align: center;
-  padding: 5% 0;
+  padding-top: 5%;
 }
 
 .donation-perks {
@@ -266,21 +273,35 @@ h4 {
 }
 
 .donation-methods {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
   text-align: center;
-  padding: 10% 0;
+  padding-top: 30px;
   background-color: #950101;
   color: #fff;
   font-weight: 900;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 30px;
 }
 
-.donation-methods img {
-  height: 200px;
-  width: auto;
+.card img {
+  height: 115px !important;
+  width: 115px !important;
   background-color: #fff;
-  border-radius:50%
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30%;
+}
+.card {
+  margin-bottom: 5px;
+}
+
+stripe-buy-button {
+  margin: 0 15px;
+  height: auto;
 }
 
 .donation-title {
@@ -292,6 +313,16 @@ h4 {
   background-color: #950101;
   margin-bottom: 0;
   overflow: hidden;
+}
+
+.card img {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  
 }
 
 /* index.html | footer and links */
@@ -363,6 +394,15 @@ a:hover {
 
   .staffcard > ul {
     margin-left: -30px;
+  }
+
+  .stripe {
+    flex-direction: column;
+  }
+
+  .donation-methods {
+    display: flex;
+    flex-direction: column;
   }
 
 }
