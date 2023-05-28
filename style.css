@@ -22,10 +22,6 @@
   height: 90vh;
 }
 
-.card {
-  
-  background: linear-gradient(45deg, #950101, #3D0000 40%);
-}
 
 .card img {
   margin-left: auto;
@@ -48,7 +44,7 @@
   justify-content: center;
   align-items: center;
 }
-.joining-cards{
+.joining-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
