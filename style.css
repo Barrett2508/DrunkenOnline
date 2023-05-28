@@ -1,10 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-  overflow-x: hidden;
-  overflow-y: visible;
 }
 
 /* index.html */
@@ -14,31 +10,6 @@
   width: auto;
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  padding: 10px 10px;
-  font-weight: 900;
-  color: #fff;
-  background-color: #000000;
-  border-bottom: 3px solid red;
-  align-items: center;
-}
-
-nav h1 {
-  padding: 10px;
-}
-
-nav > ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-}
-
-nav > ul > li {
-  cursor: pointer;
-  padding: 10px;
-}
 
 .hero {
   display: flex;
@@ -51,114 +22,43 @@ nav > ul > li {
   height: 90vh;
 }
 
-.welcome {
-  text-align: center;
-  background: linear-gradient(to right, rgba(139, 0, 0, 0.5),rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75));
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-weight: 900;
-  color: #fff;
-  font-size: 2rem;
+.card {
+  
+  background: linear-gradient(45deg, #950101, #3D0000 40%);
 }
 
-.maincard {
-  margin: 0 20px;
-  padding: 15px 0;
+.card img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px !important;
+  height: auto !important;
 }
 
-.maincard > img {
-  width: auto;
-  height: 300px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-}
-
-.card-text {
-  margin: 15px 0;
+.discord {
+  padding-top: 10px !important;
 }
 
 #dino-levels {
   margin-top: 35px;
 }
 
-.info {
-  color: #fff;
-  background: linear-gradient(to left, #4f0101, #000000, #4f0101);
-  font-size: 1.5rem;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .joining {
-  background-color: #950101;
-  height: 100dvh;
-  color: #fff;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  text-align: center;
-}
-
-
-#joining-section {
-  font-size: 2.5rem;
-  font-weight: 900;
-  text-align: center;
-  padding: 20px 0;
-  background-color: #950101;
-  color: #fff;
-  padding: 20px 0;
-}
-
-h4 {
-  font-size: 2.5rem;
-  padding-bottom: 20px;
-  text-align: center;
-  margin-top: 20%;
-}
-
-.joining img {
-  width: auto;
-  height: 150px;
-  margin: 0 auto;
-  padding: 0 5px;
-}
-
-.joining p {
-  margin-top: -50px;
-  font-weight: 900;
-}
-
-/* about.html */
-
-.about {
-  background-color: #950101;
-  color: #fff;
-  font-size: 2.5rem;
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
+}
+.joining-cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
 }
 
-.about p{
-  padding: 10px 10px;
-  margin: 10px auto;
-  font-size: 2rem;
-  width: 85%;
-}
 
-.about h2 {
-  padding-top: 20px;  
-  font-size: 2rem;
-}
+
+/* about.html */
+
+
 
 .staff-container {
   display: grid;
@@ -285,16 +185,7 @@ h4 {
   padding-bottom: 30px;
 }
 
-.card img {
-  height: 115px !important;
-  width: 115px !important;
-  background-color: #fff;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 30%;
-}
+
 .card {
   margin-bottom: 5px;
 }
@@ -327,16 +218,9 @@ stripe-buy-button {
 
 /* index.html | footer and links */
 
-footer {
-  width: 100vw;
+.footer {
   background-color: #3D0000;
-  height: 30vh;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #fff;
-  flex-direction: column;
 }
 
 a {
