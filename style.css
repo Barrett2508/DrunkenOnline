@@ -54,11 +54,20 @@
 
 /* about.html */
 
-
+.about {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 20px 20px;
+  background-color: #000000;
+  font-size: 1.25rem;
+}
 
 .staff-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+
 }
 
 .staff {
@@ -69,6 +78,10 @@
   justify-content: center;
   align-items: center;
 
+}
+
+.staff-container > .card {
+  background: linear-gradient(45deg, #950101, #3D0000 40%);
 }
 
 .staff-heading {
